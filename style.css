@@ -2,22 +2,28 @@
 body {
     font-family: Arial, sans-serif;
     font-size: 13px;
+    color: #515076;
+    font-weight: 400;
 }
 
 .title {
-    font-size: 70;
+    font-size: 70px;
     font-weight: 400;
-    line-height: 78px;
-    margin: 0;
     text-align: center;
-    color: #515076;
-    font-style: normal;
-    
 }
 
-.description,
-.compound {
-    color: #515076;
-    font-size: 13px;
-    line-height: 18px;
+.product-item {
+    font-size: 20px;
+    line-height: 27px;
 }
+
+.skin-normal {
+    font-size: 12px;
+    line-height: 24px;
+    }
+
+    ul {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18px;
+    }
