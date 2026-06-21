@@ -1,0 +1,96 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans Regular', sans-serif;
+    padding-top: 220px;
+}
+
+p, h1, h2 {
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1310px;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 70px;
+    text-align: center;
+    color: rgba(81, 80, 118, 1);
+    margin-bottom: 110px;
+}
+
+.card {
+    width: 340px;
+    background-color: rgba(247, 247, 250, 1);
+    color: rgba(81, 80, 118, 1);
+    padding: 25px;
+}
+
+.card-img {
+    max-width: 290px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.card-img img {
+    width: 100%;
+}
+
+.card-subtitle {
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(165, 163, 185, 1);
+    margin-bottom: 10px;
+
+}
+
+.card-title {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 7;
+}
+
+.card-descr {
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 15px;
+}
+
+.card-compound-text {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.card-compound-list {
+    list-style-type: circle;
+}
+
+.card-compound-item {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.card-price-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-price-text {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.card-price {
+    font-size: 20px;
+}
+
+.produkt-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    justify-content: center;
+}
