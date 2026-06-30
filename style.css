@@ -1,21 +1,4 @@
-body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Lucida Sans Regular', sans-serif;
-    padding-top: 220px;
 
-    background-image: url('images/dandelion-background-image.png');
-    background-repeat: no-repeat;
-    background-position: 85px 0;
-    background-size: 790 auto;
-}
-
-p,
-h1,
-h2 {
-    margin: 0;
-}
 
 .container {
     margin: 0 auto;
