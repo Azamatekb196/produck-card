@@ -11,7 +11,9 @@ body {
     background-size: 790 auto;
 }
 
-p, h1, h2 {
+p,
+h1,
+h2 {
     margin: 0;
 }
 
@@ -35,17 +37,17 @@ p, h1, h2 {
     padding: 25px;
 }
 
-.card-img {
+.card__img {
     max-width: 290px;
     margin: 0 auto;
     margin-bottom: 30px;
 }
 
-.card-img img {
+.card__img img {
     width: 100%;
 }
 
-.card-subtitle {
+.card__subtitle {
     font-weight: 400;
     font-size: 12px;
     color: rgba(165, 163, 185, 1);
@@ -53,19 +55,19 @@ p, h1, h2 {
 
 }
 
-.card-title {
+.card__title {
     font-weight: 700;
     font-size: 20px;
     margin-bottom: 7;
 }
 
-.card-descr {
+.card__descr {
     font-size: 13px;
     line-height: 18px;
     margin-bottom: 15px;
 }
 
-.card-compound-text {
+.card__compound-text {
     font-size: 13px;
     margin-bottom: 5px;
 }
@@ -74,26 +76,26 @@ p, h1, h2 {
     list-style-type: circle;
 }
 
-.card-compound-item {
+.card__compound-item {
     font-size: 13px;
     margin-bottom: 5px;
 }
 
-.card-price-wrapper {
+.card__price-wrapper {
     display: flex;
     justify-content: space-between;
 }
 
-.card-price-text {
+.card__price-text {
     font-weight: 700;
     font-size: 20px;
 }
 
-.card-price {
+.card__price {
     font-size: 20px;
 }
 
-.produkt-cards {
+.produсt-cards {
     display: flex;
     flex-wrap: wrap;
     gap: 45px;
