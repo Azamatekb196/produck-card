@@ -22,7 +22,7 @@ changeColorAllCardsButton.addEventListener('click', () => {
 const openGoogleButton = document.querySelector('#open-google')
 const googleUrl = 'https://google.com'
 
-openGoogleButton.addEventListener('click', (googleUrl))
+openGoogleButton.addEventListener('click', openGoogle)
 
 function openGoogle() {
   const answer = window.confirm('вы действительно хотите открыть Google')
@@ -32,4 +32,11 @@ function openGoogle() {
   }
 }
 
+const outputLogButton = document.querySelector('#output-consol-log')
 
+outputLogButton.addEventListener('click', () => outputConsoleLog('Привет!'))
+
+function outputConsoleLog(message) {
+  alert(message)
+  console.log(message)
+}
