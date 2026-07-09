@@ -39,3 +39,4 @@ function outputConsoleLog(message) {
   alert(message);
   console.log(message);
 }
+
