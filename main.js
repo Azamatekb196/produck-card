@@ -31,6 +31,7 @@ function openGoogle() {
   }
 }
 
+
 const outputLogButton = document.querySelector('#output-consol-log');
 
 outputLogButton.addEventListener('click', () => outputConsoleLog('Привет!'));
