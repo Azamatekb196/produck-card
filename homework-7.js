@@ -5,11 +5,11 @@ function showWeather(city, temperatura) {
 showWeather("Москва", 20)
 
 
-const speedLight = 1079252848.8
+const SPEED_LIGHT = 1079252848.8
 function checkSpeed(inputSpeed) {
-  if (speedLight < inputSpeed) {
+  if (SPEED_LIGHT < inputSpeed) {
   console.log('Сверхсветовая скорость')
-  } else if (speedLight === inputSpeed) {
+  } else if (SPEED_LIGHT === inputSpeed) {
     console.log('Скорость света')
   } else {
     console.log('Субсветовая скорость')
@@ -20,14 +20,14 @@ checkSpeed(767)
 const product = 'apple'
 let price = 23
 
-function budget(money) {
+function buyProduct(money, product, price) {
   if (price <= money) {
     console.log(`${product} приобретён. Спасибо за покупку!`)
   } else {
     console.log(`Вам не хватает ${price - money}$ пополните баланс`)
   }
 }
-budget(10)
+buyProduct(45, 'apple', 23)
 
 // функция конвектор времени
 function convertToSeconds(minutes) {
