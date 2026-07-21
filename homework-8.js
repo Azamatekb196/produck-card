@@ -39,4 +39,14 @@ checkMaxSpeed (car)
 console.log(car.maxSpeed)
 
 // функция получает первым аргументом — объект, а вторым аргументом — свойство объекта и выводит его значение
+const fruit = {
+  color: 'red',
+  taste: 'sour',
+  form: 'circle'
+}
 
+function printPropertry (obj, key) {
+  console.log(obj[key])
+}
+
+printPropertry(fruit, 'color')
