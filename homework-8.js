@@ -50,3 +50,8 @@ function printPropertry (obj, key) {
 }
 
 printPropertry(fruit, 'color')
+
+// массив
+
+const fruit = ['apple', 'pear', 'banana']
+
