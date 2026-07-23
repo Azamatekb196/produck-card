@@ -1,5 +1,5 @@
 
-// №3
+// №3 объект на основе данных
 
 const user = {
   name: 'Vadim',
@@ -10,7 +10,7 @@ const user = {
   work: 'developer',
 }
 
-// №4
+// №4 объект который хранит данные об автомобиле
 
 const car = {
   brend: 'Mercedes',
@@ -25,7 +25,8 @@ car.owner = user
 console.log(car)
 console.log(car.owner.name)
 
-// №5
+// №5 функция принимает объект описанный в пункте №4. Она проверяет, есть ли в объекте свойство "максимальная скорость", 
+// если нет - добавляет его и задает значение, если есть - прекращает выполнение
 
 function checkMaxSpeed (car) {
   if ('maxSpeed' in car) {
@@ -38,25 +39,26 @@ function checkMaxSpeed (car) {
 checkMaxSpeed (car)
 console.log(car.maxSpeed)
 
-// №6
+// №6 функция которая получает первым аргументом — объект, а вторым аргументом — свойство объекта, которое нужно вывести и выводит его значение
+
 const fruit = {
   color: 'red',
   taste: 'sour',
   form: 'circle'
 }
 
-function printPropertry (obj, key) {
+function printProperty (obj, key) {
   console.log(obj[key])
 }
 
-printPropertry(fruit, 'color')
+printProperty(fruit, 'color')
 
-// №7 
+// №7  массив
 
 const fruit1 = ['apple', 'pear', 'banana']
 console.log(fruit1)
 
-// №8
+// №8 массив состоящий из объектов
 
 const bookRandome = [
   { book: 'Fly High', author: 'Kazanoglou Danae', genre: 'Учебные курсы', year: 2017},
@@ -67,7 +69,7 @@ const bookRandome = [
 bookRandome.push({book: 'Завораживающее число Пи', author: 'Делайе Жан-Поль', genre: 'Просто наука', year: 2022})
 console.log(bookRandome)
 
-// №9 
+// №9 объединение 2х массивов
 
 const bookProse = [
   {book: 'Госпожа Потусторонья', author: 'Свон Таня', genre: 'Современная отечественная проза', year: 2021},
@@ -78,7 +80,7 @@ const bookProse = [
 const books = [...bookRandome, ...bookProse]
 console.log(books)
 
-// №10
+// №10 Добавляем новое свойство для объекта
 
 const addProperty = books.map(key => {
   if (key.year < 2020) {
