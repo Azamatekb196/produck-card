@@ -44,7 +44,7 @@ console.log(car.maxSpeed);
 const fruit = {
   color: 'red',
   taste: 'sour',
-  form: 'circle'
+  form: 'circle',
 };
 
 function showProperty(obj, key) {
@@ -63,7 +63,7 @@ console.log(fruit1);
 const bookRandom = [
   { book: 'Fly High', author: 'Kazanoglou Danae', genre: 'Учебные курсы', year: 2017},
   { book: 'Шарлатаны', author: 'Кук Робин', genre: 'Современная зарубежная проза', year: 2023},
-  { book: 'FreePublicity.', author: 'Иноземцева Екатерина Сергеевна', genre: 'Блоги и социальные сети', year: 2021}
+  { book: 'FreePublicity.', author: 'Иноземцева Екатерина Сергеевна', genre: 'Блоги и социальные сети', year: 2021},
 ];
 
 function addBookRandom(list, newBook) {
@@ -72,7 +72,7 @@ function addBookRandom(list, newBook) {
 
 addBookRandom(bookRandom, {book: 'Завораживающее число Пи', author: 'Делайе Жан-Поль', genre: 'Просто наука', year: 2022});
 
-console.log(bookRandom)
+console.log(bookRandom);
 
 
 
@@ -81,14 +81,14 @@ console.log(bookRandom)
 const bookProse = [
   {book: 'Госпожа Потусторонья', author: 'Свон Таня', genre: 'Современная отечественная проза', year: 2021},
   {book: 'Корона порока', author: 'Никитина Анастасия', genre: 'Современная отечественная проза', year: 2021},
-  {book: 'Шешель и шельма', author: 'Дарья Кузнецова', genre: 'Современная отечественная проза', year: 2021}
+  {book: 'Шешель и шельма', author: 'Дарья Кузнецова', genre: 'Современная отечественная проза', year: 2021},
 ];
 
 function mergeBooks(array1, array2) {
   return [...array1, ...array2];
 }
 
-const books = mergeBooks(bookRandom, bookProse)
+const books = mergeBooks(bookRandom, bookProse);
 
 
 // №10 Добавляем новое свойство для объекта
