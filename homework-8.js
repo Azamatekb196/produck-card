@@ -47,11 +47,11 @@ const fruit = {
   form: 'circle'
 };
 
-function printProperty(obj, key) {
+function showProperty(obj, key) {
   console.log(obj[key]);
 }
 
-printProperty(fruit, 'color');
+showProperty(fruit, 'color');
 
 // №7  массив
 
