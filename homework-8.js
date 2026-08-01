@@ -93,14 +93,21 @@ const books = mergeBooks(bookRandom, bookProse);
 
 // №10 Добавляем новое свойство для объекта
 
-function addOldBooks (booksList) {
+function setBookRarity (booksList) {
   return booksList.map(book => {
     if (book.year < 2020) {
-      book.isOld = 'old';
+      return{
+        ...book,
+        property: 'редкий'
+      }
+    } else {
+      return{
+        ...book,
+        property: 'новый'
+      }
     }
-    return book;
   });
 }
 
-const updatedBooks = addOldBooks(books);
+const updatedBooks = setBookRarity(books);
 console.log(updatedBooks);
