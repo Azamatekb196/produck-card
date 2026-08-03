@@ -18,3 +18,15 @@ const productExists = warehouse.includes('Телефон')
 // console.log(productExists)
 
 // задание 4
+
+function reverseArray(array) {
+  return array.reverse()
+}
+const reversedItems1 = reverseArray(warehouse)
+console.log(reversedItems1)
+
+const reversedItems2 = reverseArray(numbers)
+console.log(numbers)
+
+// уровень 2
+// задание 5
