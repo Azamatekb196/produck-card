@@ -1,4 +1,7 @@
 // уровень 1
+// задание 1
+
+import { socialMediaComments } from "./comments.js";
 
 // задание 2
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -22,11 +25,20 @@ const productExists = warehouse.includes('Телефон')
 function reverseArray(array) {
   return array.reverse()
 }
-const reversedItems1 = reverseArray(warehouse)
-console.log(reversedItems1)
 
 const reversedItems2 = reverseArray(numbers)
 console.log(numbers)
 
+const reversedItems1 = reverseArray(warehouse)
+console.log(reversedItems1)
+
+
 // уровень 2
 // задание 5
+
+function filteredEmail(items) {
+  return items.filter(item => item.email.includes('.com'))
+}
+
+const js = filteredEmail(socialMediaComments);
+console.log(js)
