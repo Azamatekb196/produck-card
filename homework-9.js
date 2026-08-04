@@ -42,3 +42,22 @@ function filteredEmail(items) {
 
 const js = filteredEmail(socialMediaComments);
 console.log(js)
+
+function assignPostIdsByUserId(items) {
+  return items.map (item =>{
+    if(item.id <= 5) {
+      return {
+        ...item,
+        postId: 2
+      }
+    } else {
+      return {
+        ...item,
+        postId: 1
+      }
+    }
+  })
+}
+
+const postId = assignPostIdsByUserId(socialMediaComments)
+console.log(postId)
