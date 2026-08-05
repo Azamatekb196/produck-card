@@ -102,6 +102,7 @@ function addPropertyUser(users) {
 const getNewProperty = addPropertyUser(socialMediaComments)
 // console.log(getNewProperty)
 
+
 // задание 11
 
 function addArrayMail(users) {
@@ -112,4 +113,22 @@ function addArrayMail(users) {
 }
 
 const arrayMail = addArrayMail(socialMediaComments)
-console.log(arrayMail)
+// console.log(arrayMail)
+
+function addArrayMail1(users) {
+  return users.map(user => {
+    return user.email
+  })
+}
+
+const arraeMail1 = addArrayMail1(socialMediaComments)
+// console.log(arraeMail1)
+
+// задание 12
+
+function arrayToString(array) {
+  return array.toString()
+}
+
+const arrayString = arrayToString(arrayMail)
+console.log(arrayString)
