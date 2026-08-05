@@ -27,10 +27,10 @@ function reverseArray(array) {
 }
 
 const reversedItems2 = reverseArray(numbers)
-console.log(numbers)
+// console.log(numbers)
 
 const reversedItems1 = reverseArray(warehouse)
-console.log(reversedItems1)
+// console.log(reversedItems1)
 
 
 // уровень 2
@@ -68,7 +68,7 @@ const postId = assignPostIdsByUserId(socialMediaComments)
 
 
 // задание 9
-function shortUsers (users) {
+function shortUsers(users) {
   return users.map(user => {
     return {
       id: user.id,
@@ -83,7 +83,7 @@ const getShortUser = shortUsers(socialMediaComments)
 
 
 // задание 10
-function addPropertyUser (users) {
+function addPropertyUser(users) {
   return users.map(user => {
     if (user.body.length > 180) {
       return {
@@ -100,5 +100,16 @@ function addPropertyUser (users) {
 }
 
 const getNewProperty = addPropertyUser(socialMediaComments)
-console.log(getNewProperty)
+// console.log(getNewProperty)
 
+// задание 11
+
+function addArrayMail(users) {
+  return users.reduce((accumulator, user) => {
+    accumulator.push(user.email);
+    return accumulator;
+  }, [])
+}
+
+const arrayMail = addArrayMail(socialMediaComments)
+console.log(arrayMail)
