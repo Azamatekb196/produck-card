@@ -60,4 +60,17 @@ function assignPostIdsByUserId(items) {
 }
 
 const postId = assignPostIdsByUserId(socialMediaComments)
-console.log(postId)
+// console.log(postId)
+
+function shortUsers (users) {
+  return users.map(user => {
+    return {
+      id: user.id,
+      name: user.name
+    }
+  })
+}
+
+const getShortUser = shortUsers(socialMediaComments)
+// console.log(getShortUser)
+
