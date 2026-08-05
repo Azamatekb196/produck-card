@@ -34,14 +34,18 @@ console.log(reversedItems1)
 
 
 // уровень 2
-// задание 5
+
+// задание 7
 
 function filteredEmail(items) {
   return items.filter(item => item.email.includes('.com'))
 }
 
 const js = filteredEmail(socialMediaComments);
-console.log(js)
+// console.log(js)
+
+
+// задание 8
 
 function assignPostIdsByUserId(items) {
   return items.map (item =>{
@@ -62,6 +66,8 @@ function assignPostIdsByUserId(items) {
 const postId = assignPostIdsByUserId(socialMediaComments)
 // console.log(postId)
 
+
+// задание 9
 function shortUsers (users) {
   return users.map(user => {
     return {
@@ -73,4 +79,26 @@ function shortUsers (users) {
 
 const getShortUser = shortUsers(socialMediaComments)
 // console.log(getShortUser)
+
+
+
+// задание 10
+function addPropertyUser (users) {
+  return users.map(user => {
+    if (user.body.length > 180) {
+      return {
+        ...user,
+        isInvalid: true
+      }
+    } else {
+      return {
+        ...user,
+        isInvalid: false
+      }
+    }
+  })
+}
+
+const getNewProperty = addPropertyUser(socialMediaComments)
+console.log(getNewProperty)
 
