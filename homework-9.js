@@ -15,18 +15,18 @@ const numberFromFive = getNumberFromFive(numbers);
 // задание 3
 const warehouse = ['Ноутбук', 'Мышь', 'Телефон', 'Чехол'];
 
-const productExists = warehouse.includes('Телефон');
+const hasElement = warehouse.includes('Телефон');
+
 
 
 // задание 4
 function reverseArray(array) {
-  return array.reverse();
+  array.reverse();
 }
 
-const reversedItems2 = reverseArray(numbers);
+reverseArray(numbers);
 
-
-const reversedItems1 = reverseArray(warehouse);
+reverseArray(warehouse);
 
 
 
@@ -35,7 +35,9 @@ function filteredEmail(items) {
   return items.filter(item => item.email.includes('.com'));
 }
 
-const js = filteredEmail(socialMediaComments);
+const filteredItems = filteredEmail(socialMediaComments);
+
+console.log(filteredItems)
 
 
 
