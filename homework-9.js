@@ -37,25 +37,13 @@ function filteredEmail(items) {
 
 const filteredItems = filteredEmail(socialMediaComments);
 
-console.log(filteredItems)
-
-
 
 // задание 8
 function assignPostIdsByUserId(items) {
-  return items.map (item => {
-    if(item.id <= 5) {
-      return {
-        ...item,
-        postId: 2
-      };
-    } else {
-      return {
-        ...item,
-        postId: 1
-      };
-    }
-  })
+  return items.map (item => ({
+    ...item,
+    postId: item.id <= 5 ? 2 : 1
+  }));
 }
 
 const postId = assignPostIdsByUserId(socialMediaComments);
@@ -63,7 +51,7 @@ const postId = assignPostIdsByUserId(socialMediaComments);
 
 
 // задание 9
-function shortUsers(users) {
+function selectUser(users) {
   return users.map(user => {
     return {
       id: user.id,
@@ -72,26 +60,17 @@ function shortUsers(users) {
   });
 }
 
-const getShortUser = shortUsers(socialMediaComments);
+const idAndName = selectUser(socialMediaComments);
 
 
 
 // задание 10
 function addPropertyUser(users) {
-  return users.map(user => {
-    if (user.body.length > 180) {
-      return {
-        ...user,
-        isInvalid: true
-      };
-    } else {
-      return {
-        ...user,
-        isInvalid: false
-      };
-    }
-  })
-};
+  return users.map(user => ({
+    ...user,
+    isInvalid : user.body.length > 180 ? true : false
+  }));
+}
 
 const getNewProperty = addPropertyUser(socialMediaComments);
 
