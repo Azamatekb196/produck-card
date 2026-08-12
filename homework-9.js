@@ -5,10 +5,10 @@ import { socialMediaComments } from "./comments.js";
 // задание 2
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-function getNumberFromFive (numbers) {
+function getNumbersFromFive (numbers) {
   return numbers.filter(item => item >= 5);
 }
-const numberFromFive = getNumberFromFive(numbers);
+const numbersFromFive = getNumbersFromFive(numbers);
 
 
 
@@ -31,27 +31,27 @@ reverseArray(warehouse);
 
 
 // задание 7
-function filteredEmail(items) {
+function getFilteredEmails(items) {
   return items.filter(item => item.email.includes('.com'));
 }
 
-const filteredItems = filteredEmail(socialMediaComments);
+const filteredEmails = getFilteredEmails(socialMediaComments);
 
 
 // задание 8
-function assignPostIdsByUserId(items) {
+function getUpdatedPosts(items) {
   return items.map (item => ({
     ...item,
     postId: item.id <= 5 ? 2 : 1
   }));
 }
 
-const postId = assignPostIdsByUserId(socialMediaComments);
+const updatedPosts = getUpdatedPosts(socialMediaComments);
 
 
 
 // задание 9
-function selectUser(users) {
+function getIdAndName(users) {
   return users.map(user => {
     return {
       id: user.id,
@@ -60,51 +60,51 @@ function selectUser(users) {
   });
 }
 
-const idAndName = selectUser(socialMediaComments);
+const idAndName = getIdAndName(socialMediaComments);
 
 
 
 // задание 10
-function addPropertyUser(users) {
+function updateUsers(users) {
   return users.map(user => ({
     ...user,
     isInvalid : user.body.length > 180 ? true : false
   }));
 }
 
-const getNewProperty = addPropertyUser(socialMediaComments);
+const getUpdatedUser = updateUsers(socialMediaComments);
 
 
 // задание 11
-function addArrayMail(users) {
+function getEmails(users) {
   return users.reduce((accumulator, user) => {
     accumulator.push(user.email);
     return accumulator;
   }, []);
 }
 
-const arrayMail = addArrayMail(socialMediaComments);
+const emails = getEmails(socialMediaComments);
 
 
-function addArrayMail1(users) {
+function getEmails1(users) {
   return users.map(user => {
     return user.email;
   })
 }
 
-const arraeMail1 = addArrayMail1(socialMediaComments);
+const emails1 = getEmails1(socialMediaComments);
 
 
 // задание 12
-function arrayToString(array) {
+function convertToString(array) {
   return array.toString();
 }
 
-const arrayString = arrayToString(arrayMail);
+const stringValue = convertToString(arrayMail);
 
 
-function arrayToString1(array) {
+function convertToString1(array) {
   return array.join();
 }
 
-const array1 = arrayToString1(arrayMail);
+const stringValue1 = convertToString1(arrayMail);
